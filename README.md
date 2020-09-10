@@ -7,3 +7,4 @@ Written using beautifulsoup4 and lxml for the html parsing.
 * install beautifulsoup `pip install beautifulsoup4`
 * install lxml `pip install lxml`
 * run `python icarus.py` or `python3 icarus.py`
+  * if you are on windows please use ***powershell***
