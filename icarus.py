@@ -167,36 +167,57 @@ def calc_average_grade():
             print('OTHER')
             if (course['status'] == 'Επιτυχία '):
                 other += 1
+                grades_sum += float(course['grade'])
+                total += 1
+                exetastiki += 1
 
         elif (course['code'] == '321-9703 ' or course['code'] == '321-5753 ' or course['code'] == '321-8053 ' or course['code'] == '321-10753 ' or course['code'] == '321-99101 ' or course['code'] == '321-7406 '):
             print('C1 - Security')
             if (course['status'] == 'Επιτυχία '):
                 cirle_1 += 1
+                grades_sum += float(course['grade'])
+                total += 1
+                exetastiki += 1
 
         elif (course['code'] == '321-8953 ' or course['code'] == '321-5155 ' or course['code'] == '321-8504 ' or course['code'] == '321-11102 ' or course['code'] == '321-7653 ' or course['code'] == '321-5607 ' or course['code'] == '321-5403 '):
             print('C2 - Entrepreneurship')
             if (course['status'] == 'Επιτυχία '):
                 cirle_2 += 1
+                grades_sum += float(course['grade'])
+                total += 1
+                exetastiki += 1
 
         elif (course['code'] == '321-10302 ' or course['code'] == '321-7051 ' or course['code'] == '321-7803 ' or course['code'] == '321-9703 ' or course['code'] == '321-8752 ' or course['code'] == '321-7853 ' or course['code'] == '321-10652 ' or course['code'] == '321-6555 ' or course['code'] == '321-8653 '):
             print('C3 - Telecommunications')
             if (course['status'] == 'Επιτυχία '):
                 cirle_3 += 1
+                grades_sum += float(course['grade'])
+                total += 1
+                exetastiki += 1
 
         elif (course['code'] == '321-8354 ' or course['code'] == '321-7003 ' or course['code'] == '321-7256 ' or course['code'] == '321-11001 ' or course['code'] == '321-6257 ' or course['code'] == '321-9404 ' or course['code'] == '321-9120 '):
             print('C4 - Networking')
             if (course['status'] == 'Επιτυχία '):
                 cirle_4 += 1
+                grades_sum += float(course['grade'])
+                total += 1
+                exetastiki += 1
 
         elif (course['code'] == '321-7754 ' or course['code'] == '321-3553 ' or course['code'] == '321-9253 ' or course['code'] == '321-10202 ' or course['code'] == '321-7406 ' or course['code'] == '321-6606 '):
             print('C5 - Intelligent Systems')
             if (course['status'] == 'Επιτυχία '):
                 cirle_5 += 1
+                grades_sum += float(course['grade'])
+                total += 1
+                exetastiki += 1
 
         elif (course['code'] == '321-8603 ' or course['code'] == '321-99002 ' or course['code'] == '321-9455 ' or course['code'] == '321-8001 ' or course['code'] == '321-9855 ' or course['code'] == '321-9003 ' or course['code'] == '321-10001 '):
             print('C6 - Computer Science')
             if (course['status'] == 'Επιτυχία '):
-               cirle_6 += 1
+                cirle_6 += 1
+                grades_sum += float(course['grade'])
+                total += 1
+                exetastiki += 1
 
         else :
             print('MANDATORY')
@@ -206,8 +227,8 @@ def calc_average_grade():
                 exetastiki += 1
 
         print('  STATUS :', course['status'])
-        if (course['grade'].isnumeric()):
-            print('  GRADE :', course['grade'])
+        if (course['status'] == 'Επιτυχία '):
+            print('  GRADE  :', course['grade'])
 
         print()
 
